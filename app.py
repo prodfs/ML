@@ -30,7 +30,7 @@ def predict():
     prediction = model.predict(final_features)
     print(prediction)
     output = round(prediction[0], 2)
-    return render_template('index.html', prediction_text='Purchased'.format(output))
+    return render_template('index.html', prediction_text='1 for purchased and 0 for not purchased = {}'.format(output))
 
     
 if __name__ == "__main__":
